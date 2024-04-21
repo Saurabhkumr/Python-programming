@@ -111,10 +111,10 @@ comment
 
 # greethello(name="saurabh",ending="kumar")  
 
-def greethello(name,ending="kumar"):
-  print("hello"+ name + ending)
+# def greethello(name,ending="kumar"):
+#   print("hello"+ name + ending)
 
-greethello(name="saurabh")  
+# greethello(name="saurabh")  
 
 # x=3
 # def modify():
@@ -134,3 +134,35 @@ greethello(name="saurabh")
 
 # food=["mango","banana","apple"]
 # fun(food)    
+
+# decorators
+
+# def outer():
+#   print("i am outer func")
+#   def inner():
+#     print("i am inner func")
+#   inner()  
+# outer()
+
+# def greet(func):
+#   def sum(a,b):
+#     print("welcome...")
+#     print(func(a,b))
+#     print("thankyou..")
+#   return sum
+
+# @greet  # decorator
+# def add(a,b):
+#   return a+b
+
+# add(4,8)
+
+
+#reccursion
+
+def factorial(num):
+  if(num==1):
+    return 1
+  return num*factorial(num-1)
+
+print(factorial(4))
