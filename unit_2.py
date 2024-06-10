@@ -7,7 +7,7 @@
 # print(str[-1:-6:-1]) 
 # print(str[-4:-1])  #len-4 to len-1
 
-s1="hello world"
+# s1="hello world"
 # s2=s1
 # s1+=" guys"
 # print(s1)
@@ -61,6 +61,10 @@ s1="hello world"
 # print(list) 
 # l.insert(2,99)
 
+l1=[1,2,32,4,54]
+l2=[22,33]
+l1.insert(2,l2)
+print(l1)
 # print(l.count(2))
 # print(min(l))
 # print(sum(l))
@@ -90,11 +94,11 @@ s1="hello world"
 
 # Dictionary : mapping data structure , having element  key value pairs, ordered sequence
 
-# dict={
-#   "name":"Saurabh",
-#   "age":21,
-#   "course":"Mca"
-# }
+dict={
+  "name":"Saurabh",
+  "age":21,
+  "course":"Mca"
+}
 # print(len(dict))
 # dict["college"]="bciit"
 # print(dict)
@@ -111,8 +115,9 @@ s1="hello world"
 # for key , value in dict.items():
 #   print(key,":",value)
   
-# print(dict.keys())
-# print(dict.values())
+print(dict.keys())
+print(dict.values())
+print(dict.items())
 
 # print(dict.get("name"))
 # dict.clear()
@@ -158,18 +163,18 @@ import pickle
 # f=open('f1.dat','rb')
 # print(pickle.load(f))
 
-def write():
-  f=open('f.dat','wb')
-  a=input("enter your name : ")
-  b=input("enter your age : ")
-  c = input("enter your course : ")
-  l=[a,b,c]
-  pickle.dump(l,f)
-  f.close()
+# def write():
+#   f=open('f.dat','wb')
+#   a=input("enter your name : ")
+#   b=input("enter your age : ")
+#   c = input("enter your course : ")
+#   l=[a,b,c]
+#   pickle.dump(l,f)
+#   f.close()
   
-def read():
-  f=open('f.dat','rb')
-  print(pickle.load(f))  
+# def read():
+#   f=open('f.dat','rb')
+#   print(pickle.load(f))  
   
-write()
-read()
+# write()
+# read()

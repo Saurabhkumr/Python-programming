@@ -1,13 +1,13 @@
 # lambda function : dunction without name
 
-# double = lambda x : x*2
+double = lambda x : x*2
 # sum = lambda x,y : x+y
 
 
-# def func(f,value):
-#   return value+f(value)
+def func(f,value):
+  return value+f(value)
 
-# print(func(double,8))
+print(func(double,8))
 # print(sum(5,9)) 
 # print(double(4))
 
